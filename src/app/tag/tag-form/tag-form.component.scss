@@ -1,0 +1,31 @@
+.form-data{
+  padding:10px;
+  font-size: 20px;
+}
+
+.button-action:first-of-type{
+  background-color: rgba(214, 243, 72, 0.452);
+}
+.button-action:first-of-type:hover{
+  background-color: rgba(214, 243, 72, 0.9);
+}
+.button-action:last-child{
+  background-color: rgba(55, 255, 0, 0.452);
+}
+.button-action:last-child:hover{
+  background-color: rgba(55, 255, 0, 0.9);
+}
+.button-action{
+  margin:2px;
+  padding:10px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+
+label{
+  margin:10px;
+}
+input{
+  margin: 10px;
+}

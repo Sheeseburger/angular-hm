@@ -1,0 +1,23 @@
+<button class="button-nav" (click)="navigateToProducts()">To products</button>
+<button class="button-nav" (click)="navigateToCreateTag()">Create Tag</button>
+
+<div class="list-container">
+  <div class="tag-card" *ngFor="let tag of tags$ | async">
+    <div appHighlight="#e5e5e5" class="tag-card-item-div">
+      <div class="tag-card-item" [style.background-color]="tag.color">
+        {{ tag.name }}
+      </div>
+
+      <div class="button-delete-div">
+        <button class="button-action" (click)="deleteTag(tag.id)">
+          Delete Tag
+        </button>
+        <button class="button-action" (click)="navigateToEditTag(tag.id)">
+          Edit Tag
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- (click)="navigateToTask(task.id)" -->
+</div>

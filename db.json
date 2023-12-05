@@ -1,0 +1,78 @@
+{
+  "products": [
+    {
+      "price": 11,
+      "description": "Fresh tomatoes",
+      "title": "Tomatoes",
+      "stock": 58,
+      "tags": [
+        {
+          "name": "Fresh",
+          "color": "#0af551",
+          "id": 1
+        },
+        {
+          "name": "A few left",
+          "color": "#f3e012",
+          "id": 2
+        }
+      ],
+      "id": 1
+    },
+    {
+      "price": 1000097784,
+      "description": "Only one in the world",
+      "title": "Golden ring",
+      "stock": 1,
+      "tags": [
+        {
+          "name": "A few left",
+          "color": "#f3e012",
+          "id": 2
+        }
+      ],
+      "id": 2
+    },
+    {
+      "price": 1.55,
+      "description": "Just bread",
+      "title": "Bread",
+      "stock": 10,
+      "tags": [
+        {
+          "name": "Fresh",
+          "color": "#0af551",
+          "id": 1
+        },
+        {
+          "name": "A few left",
+          "color": "#f3e012",
+          "id": 2
+        },
+        {
+          "name": "Discount",
+          "color": "#ff0000",
+          "id": 3
+        }
+      ],
+      "id": 3
+    }
+  ],
+  "tags": [
+    {
+      "name": "Fresh",
+      "color": "#0af551",
+      "id": 1
+    },
+    {
+      "name": "A few left",
+      "color": "#f3e012",
+      "id": 2
+    },
+    {
+      "name": "Discount",
+      "color": "#ff0000",
+      "id": 3
+    }
+  ]
+}

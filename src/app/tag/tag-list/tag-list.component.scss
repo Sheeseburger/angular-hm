@@ -1,0 +1,39 @@
+.tag-card{
+  margin:2px;
+  border:2px solid black;
+  padding:2px;
+}
+.tag-card-item{
+  font-size: 20px;
+
+  padding: 10px;
+}
+.list-container{
+  display: flex;
+justify-content: flex-start;
+}
+
+.button-action, .button-nav{
+  margin:2px;
+  padding:10px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.button-action:first-child{
+  background-color: rgba(255, 34, 0, 0.452);
+}
+.button-action:first-child:hover{
+  background-color: rgba(255, 34, 0, 0.9);
+}
+.button-action:last-child{
+  background-color: rgba(55, 255, 0, 0.452);
+}
+.button-action:last-child:hover{
+  background-color: rgba(55, 255, 0, 0.9);
+}
+.button-nav{
+  background-color: rgba(255, 166, 0, 0.452);
+  }
+  .button-nav:hover{
+    background-color: orange;
+  }

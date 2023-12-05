@@ -1,0 +1,72 @@
+.product-card{
+  display:grid;
+  border:2px solid black;
+  margin: 5px;
+  padding: 10px;
+  font-size: 20px;
+  grid-template-rows: auto auto;
+
+}
+.product-card-item{
+  padding: 20px;
+}
+.product-card-item:last-child{
+  background-color: rgba(88, 244, 137, 0.653);
+  padding: 20px;
+}
+.list-container{
+  display:flex;
+}
+.button-delete{
+  background-color: rgba(255, 34, 0, 0.452);
+}
+.button-delete:hover{
+  background-color: rgba(255, 34, 0, 0.9);
+}
+.button-create, .button-delete{
+  padding:15px;
+  margin:10px;
+  font-size: 20px;
+}
+.button-create{
+background-color: rgba(255, 166, 0, 0.452);
+}
+.button-create:hover{
+  background-color: orange;
+}
+.product-card-item-div{
+  display: flex;
+}
+
+
+.tags-container{
+
+  display: flex;
+
+}
+
+.tags{
+  padding: 10px;
+  width: fit-content;
+  border-radius: 10px;
+  margin:2px;
+
+}
+
+.filter-tag{
+  display: flex;
+}
+.selected-tag{
+  font-size: 24px;
+
+}
+.delete-filters{
+  font-size: 20px;
+  margin:2px;
+  padding:10px;
+  border-radius: 10px;
+  background-color: rgba(255, 34, 0, 0.452);
+}
+.delete-filters:hover{
+  background-color: rgba(255, 34, 0, 0.9);
+}

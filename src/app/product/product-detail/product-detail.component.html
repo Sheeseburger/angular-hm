@@ -1,0 +1,30 @@
+<div class="product-card" *ngIf="product">
+  <div class="product-card-item">{{ product.title }}</div>
+  <div class="product-card-item">
+    {{ product.price | currency }}
+  </div>
+  <div class="product-card-item-description">
+    <div class="tags-container">
+      <div *ngFor="let tag of product.tags">
+        <div class="tags" [style.background-color]="tag.color">
+          {{ tag.name }}
+        </div>
+      </div>
+    </div>
+    {{ product.description }}
+  </div>
+  <div
+    class="product-card-item-stock"
+    [ngClass]="{
+      'out-of-stock': product.stock === 0,
+      'in-stock': product.stock > 0
+    }"
+  >
+    Stock: {{ product.stock }}
+  </div>
+  <button (click)="deleteProduct(product.id)" class="button-action">
+    Delete
+  </button>
+  <button (click)="editProduct(product.id)" class="button-action">Edit</button>
+</div>
+<button (click)="goBack()" class="button-nav">Go back</button>

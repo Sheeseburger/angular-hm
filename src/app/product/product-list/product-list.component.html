@@ -1,0 +1,49 @@
+<div class="filter-tag">
+  <div *ngFor="let tag of tags" (click)="applyTagFilter(tag)">
+    <div
+      class="tags"
+      [style.background-color]="tag.color"
+      [ngClass]="{ 'selected-tag': isTagFiltered(tag) }"
+    >
+      {{ tag.name }}
+    </div>
+  </div>
+  <button class="delete-filters" (click)="freeFilters()">
+    Delete all filters
+  </button>
+</div>
+
+<button class="button-create" (click)="navigateToCreate()">
+  Create Product
+</button>
+<button class="button-create" (click)="navigateToCreateTag()">
+  Create Tag
+</button>
+<button class="button-create" (click)="navigateToListTage()">Tag list</button>
+
+<div class="list-container">
+  <div class="product-card" *ngFor="let product of products$ | async">
+    <div
+      appHighlight="#e5e5e5"
+      (click)="navigateToProduct(product.id)"
+      class="product-card-item-div"
+    >
+      <div class="product-card-item">{{ product.title }}</div>
+      <div class="product-card-item">
+        {{ product.price | currency }}
+      </div>
+    </div>
+    <div class="tags-container">
+      <div *ngFor="let tag of product.tags">
+        <div class="tags" [style.background-color]="tag.color">
+          {{ tag.name }}
+        </div>
+      </div>
+    </div>
+    <div class="button-delete-div">
+      <button class="button-delete" (click)="deleteProduct(product.id)">
+        Delete Product
+      </button>
+    </div>
+  </div>
+</div>

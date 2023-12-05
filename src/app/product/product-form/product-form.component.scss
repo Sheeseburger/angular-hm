@@ -1,0 +1,28 @@
+.form-data{
+  margin:10px;
+  padding: 20px;
+  display: grid;
+  row-gap: 10px;
+  font-size: 20px;
+}
+.buttons{
+  display:flex;
+}
+
+button{
+  padding: 10px;
+  margin: 10px;
+  width: 150px;
+  font-size: 20px;
+}
+button:first-child{
+  color:green
+}
+button:last-child{
+  color:red;
+}
+.tag-item{
+  width: fit-content;
+  padding: 10px;
+  border-radius: 8px;
+}

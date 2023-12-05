@@ -1,0 +1,52 @@
+<form>
+  <div class="form-data">
+    <label for="title">Title</label>
+    <input
+      name="title"
+      type="text"
+      placeholder="title"
+      [(ngModel)]="newProduct.title"
+    />
+    <label for="stock">stock</label>
+    <input
+      type="number"
+      name="stock"
+      placeholder="stock"
+      [(ngModel)]="newProduct.stock"
+    />
+    <label for="description">Description</label>
+    <textarea
+      name="description"
+      [(ngModel)]="newProduct.description"
+      cols="10"
+      rows="5"
+      placeholder="description"
+    ></textarea>
+    <label for="price">Price</label>
+    <input
+      type="number"
+      name="price"
+      placeholder="price"
+      [(ngModel)]="newProduct.price"
+    />
+    <label for="tags">Tags:</label>
+    <div
+      *ngFor="let tag of tags"
+      [style.background-color]="tag.color"
+      class="tag-item"
+    >
+      <input
+        type="checkbox"
+        name="tags"
+        [value]="tag.id"
+        (change)="updateTags(tag.id)"
+      />
+      <label for="{{ tag.id }}"> {{ tag.name }}</label>
+    </div>
+  </div>
+
+  <!-- <div class="buttons"> -->
+  <button (click)="addProduct()">ADD</button>
+  <button (click)="goBack()">Back</button>
+  <!-- </div> -->
+</form>
